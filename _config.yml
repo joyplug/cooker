@@ -1,0 +1,44 @@
+title: Cooker Recipes
+description: 간단 요리 레시피 모음
+remote_theme: just-the-docs/just-the-docs
+repository: joyplug/cooker
+baseurl: "/cooker"
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+nav_enabled: true
+back_to_top: true
+
+callouts:
+  note:
+    title: "참고"
+    color: blue
+  warning:
+    title: "주의"
+    color: red
+
+collections:
+  pages:
+    output: true
+    permalink: "/:path/"
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      nav_exclude: true
+
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: default
+      nav_exclude: false
+
+just_the_docs:
+  collections:
+    pages:
+      name: "Home"
+      nav_exclude: false
