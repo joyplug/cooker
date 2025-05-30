@@ -10,7 +10,7 @@ nav_order: 1
 ### [▶️ 영상 레시피](https://www.youtube.com/shorts/y6Cf66PoynI)
 
 ## 🧂 재료
-- 라면(1봉) / 스프(반봉지)
+- 라면(1봉)
 - 설탕(2스푼)
 - 마요네즈(4스푼)
 
