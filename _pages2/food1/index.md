@@ -5,4 +5,4 @@ has_children: true
 nav_order: 1
 ---
 
-# 면요리 모음
+# 푸드1 모음
