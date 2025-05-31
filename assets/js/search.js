@@ -42,18 +42,23 @@ function initNav() {
 
   disableHeadStyleSheets();
 
+  // jtd.addEvent(menuButton, 'click', function(e){
+  //   e.preventDefault();
+
+  //   if (menuButton.classList.toggle('nav-open')) {
+  //     siteNav.classList.add('nav-open');
+  //     mainHeader.classList.add('nav-open');
+  //     menuButton.ariaPressed = true;
+  //   } else {
+  //     siteNav.classList.remove('nav-open');
+  //     mainHeader.classList.remove('nav-open');
+  //     menuButton.ariaPressed = false;
+  //   }
+  // });
+
   jtd.addEvent(menuButton, 'click', function(e){
     e.preventDefault();
-
-    if (menuButton.classList.toggle('nav-open')) {
-      siteNav.classList.add('nav-open');
-      mainHeader.classList.add('nav-open');
-      menuButton.ariaPressed = true;
-    } else {
-      siteNav.classList.remove('nav-open');
-      mainHeader.classList.remove('nav-open');
-      menuButton.ariaPressed = false;
-    }
+    document.body.classList.toggle('js-menu-open');
   });
 
   {%- if site.search_enabled != false and site.search.button %}
@@ -110,6 +115,7 @@ function initSearch() {
         } else {
           console.warn("⚠️ lunr.ko 미적용: lunr.ko 모듈이 로드되지 않았습니다.");
         }
+        // this.use(lunr.ko);  // 한글 토큰화 적용 (이제는 안전)
 
         this.ref('id');
         this.field('title', { boost: 200 });
