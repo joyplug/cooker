@@ -1,7 +1,7 @@
 ---
-title: 라면볶이
-parent: 면요리
-grand_parent: 레시피
+title: food11
+parent: 푸드1
+grand_parent: 한정식
 nav_order: 2
 ---
 

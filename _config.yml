@@ -22,6 +22,9 @@ collections:
   pages:
     output: true
     permalink: "/:path/"
+  pages2:
+    output: true
+    permalink: /:path/
 
 defaults:
   - scope:
@@ -37,8 +40,18 @@ defaults:
       layout: default
       nav_exclude: false
 
+  - scope:
+      path: "_pages2"
+      type: pages2
+    values:
+      layout: default
+      nav_exclude: false
+
 just_the_docs:
   collections:
     pages:
-      name: "Home"
+      name: "간편식"
+      nav_exclude: false
+    pages2:
+      name: "한정식"
       nav_exclude: false

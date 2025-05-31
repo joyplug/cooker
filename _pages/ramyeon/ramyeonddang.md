@@ -1,7 +1,7 @@
 ---
 title: 라면땅
-parent: 간편식
-grand_parent: 레시피
+parent: 라면요리
+grand_parent: 간편식
 nav_order: 1
 ---
 

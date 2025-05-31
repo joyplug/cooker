@@ -1,6 +1,6 @@
 ---
-title: 면요리
-parent: 레시피
+title: 푸드1
+parent: 한정식
 has_children: true
 nav_order: 1
 ---
